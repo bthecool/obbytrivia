@@ -18,8 +18,8 @@ function findQuestion(question)
         if fq.Question~=question.Question then 
             continue
         end
-        for _, v in pairs(fq.Answers) do
-            if not question.Answers[v] then
+        for k in pairs(fq.Answers) do
+            if not question.Answers[k] then
                return
             end
         end
