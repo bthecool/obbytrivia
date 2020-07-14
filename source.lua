@@ -59,6 +59,7 @@ mergeQuestions(file, github)
 local currentquestion, matchingquestion
 local autoanswer = true
 local autoupdate = false
+local answerwaittime = 3500
 
 local window, obj = lib:AddWindow("obby trivia")
 local c = window:AddTab("control panel")
@@ -76,6 +77,14 @@ end)
 c:AddSwitch("Auto-Answer", function(val)
     autoanswer = val
 end):Set(autoanswer)
+
+local tempanswerwaittime = answerwaittime
+c:AddSlider("Answer Wait Time (ms)", function(newtime)
+	answerwaittime = newtime
+end, {
+	max=7000,
+}):Set(tempanswerwaittime/70)
+
 local autocollectcoinsenabled = false
 c:AddSwitch("Auto-Collect Coins", function(val)
 	autocollectcoinsenabled = val
@@ -146,7 +155,7 @@ function doQuestion(child)
 			qdisplay.Text = "Question: "..matchingquestion.Question
 			adisplay.Text = "Answer: "..matchingquestion.Answer
 			if autoanswer then
-				wait(2.5) --delay answer so it doesnt look suspicious
+				wait(answerwaittime/1000) --delay answer so it doesnt look suspicious
 				answerremote:FireServer(matchingquestion.Answer)
 			end
 	end
