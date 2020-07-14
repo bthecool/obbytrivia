@@ -2728,5 +2728,35 @@
          "1914":true
       },
       "Answer":"1922"
+   },
+   {
+      "Question":"The American, Alvin York, is famous for being what?",
+      "Answers":{
+         "Politician":true,
+         "War Hero":true,
+         "Artist":true,
+         "Musician":true
+      },
+      "Answer":"War Hero"
+   },
+   {
+      "Question":"How many countries share a border with China?",
+      "Answers":{
+         "10":true,
+         "8":true,
+         "12":true,
+         "14":true
+      },
+      "Answer":"14"
+   },
+   {
+      "Question":"What English football club is nicknamed The Railwaymen?",
+      "Answers":{
+         "Birmingham City":true,
+         "Aston Villa":true,
+         "Crewe Alexandra":true,
+         "Doncaster Rovers":true
+      },
+      "Answer":"Crewe Alexandra"
    }
 ]
