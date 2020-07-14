@@ -17,12 +17,17 @@ function findQuestion(question)
     for _, fq in pairs(questions) do
         if fq.Question~=question.Question then 
             continue
-        end
+	end
+	local skip
         for k in pairs(fq.Answers) do
             if not question.Answers[k] then
-               return
+		skip = true               
+		break
             end
-        end
+	end
+	if skip then
+	    continue
+	end
         return fq
     end
 end
