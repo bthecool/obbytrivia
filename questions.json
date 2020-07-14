@@ -2808,5 +2808,65 @@
          "Mars":true
       },
       "Answer":"Mars"
+   },
+   {
+      "Question":"How many countries share a border with Germany?",
+      "Answers":{
+         "10":true,
+         "7":true,
+         "8":true,
+         "9":true
+      },
+      "Answer":"9"
+   },
+   {
+      "Question":"What is the name of an Electron's Antiparticle?",
+      "Answers":{
+         "Positron":true,
+         "Plustron":true,
+         "Neutron":true,
+         "Statictron":true
+      },
+      "Answer":"Positron"
+   },
+   {
+      "Question":"In which year were the Man and Women (Robloxian 3.0)  bodies released?",
+      "Answers":{
+         "2014":true,
+         "2012":true,
+         "2010":true,
+         "2008":true
+      },
+      "Answer":"2012"
+   },
+   {
+      "Question":"In which year was the first modern olympic games held?",
+      "Answers":{
+         "1912":true,
+         "1896":true,
+         "1888":true,
+         "1904":true
+      },
+      "Answer":"1896"
+   },
+   {
+      "Question":"How many Radians is equal to 360 Degrees?  (π = Pi)",
+      "Answers":{
+         "2π":true,
+         "π":true,
+         "π / 2":true,
+         "3π / 2":true
+      },
+      "Answer":"2π"
+   },
+   {
+      "Question":"Which country has the longest coastline?",
+      "Answers":{
+         "Canada":true,
+         "Russia":true,
+         "Indonesia":true,
+         "Australia":true
+      },
+      "Answer":"Canada"
    }
 ]
